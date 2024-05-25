@@ -1588,6 +1588,190 @@ footer .wave#wave4{
   font-size: 0.9rem;
   width: 75%;
 }
+.cardd1 {
+  position: relative;
+  width: 80%;
+  color: white;
+  height: 260px;
+  background: #444;
+  border-radius: 14px;
+}
+
+.bg {
+  position: absolute;
+  z-index: -1;
+  inset: -4px;
+  border-radius: 16px;
+  overflow: hidden;
+}
+
+.uwu {
+  filter: blur(8px);
+  transition: filter 0.3s;
+}
+
+.bg::before {
+  content: '';
+  position: absolute;
+  aspect-ratio: 1/1;
+  top: 50%;
+  left: 50%;
+  min-width: 150%;
+  min-height: 150%;
+  background-image: conic-gradient(
+    hsl(0, 100%, 50%),
+    hsl(30, 100%, 50%),
+    hsl(60, 100%, 50%),
+    hsl(90, 100%, 50%),
+    hsl(120, 100%, 50%),
+    hsl(150, 100%, 50%),
+    hsl(180, 100%, 50%),
+    hsl(210, 100%, 50%),
+    hsl(240, 100%, 60%),
+    hsl(270, 100%, 50%),
+    hsl(300, 100%, 50%),
+    hsl(330, 100%, 50%),
+    hsl(360, 100%, 50%)
+  );
+  animation: speeen 4s linear infinite;
+  transform-origin: 0% 0%;
+  transform: rotate(0deg) translate(-50%, -50%);
+}
+
+@keyframes speeen {
+  from {
+    transform: rotate(0deg) translate(-50%, -50%);
+  }
+
+  to {
+    transform: rotate(360deg) translate(-50%, -50%);
+  }
+}
+
+.contenttt {
+  position: relative;
+  padding: 14px 16px;
+}
+.contenttt div {
+  text-align: center;
+}
+
+.h11 {
+  margin-top: 1em;
+  margin-bottom: 1em;
+  margin-left: 1em;
+  margin-right: 1em;
+  font-size: 25px;
+  font-weight: 600;
+  letter-spacing: 1.2px;
+}
+.page {
+  position: relative;
+  box-sizing: border-box;
+  max-width: 90%;
+  font-family: cursive;
+  font-size: 20px;
+  border-radius: 10px;
+  background: #fff;
+  background-image: linear-gradient(#f5f5f0 1.1rem, #ccc 1.2rem);
+  background-size: 100% 1.2rem;
+  line-height: 1.4em;
+  padding: 1.4rem 0.5rem 0.3rem 4.5rem;
+  margin-top: 4%;
+}
+
+.page::before,
+.page::after {
+  position: absolute;
+  content: "";
+  bottom: 10px;
+  width: 40%;
+  height: 10px;
+  box-shadow: 0 5px 14px rgba(0, 0, 0, 0.7);
+  z-index: -1;
+  transition: all 0.3s ease;
+}
+
+.page::before {
+  left: 15px;
+  transform: skew(-5deg) rotate(-5deg);
+}
+
+.page::after {
+  right: 15px;
+  transform: skew(5deg) rotate(5deg);
+}
+
+.page:hover::before,
+.page:hover::after {
+  box-shadow: 0 2px 14px rgba(0, 0, 0, 0.4);
+}
+
+.margin {
+  position: absolute;
+  border-left: 1px solid #d88;
+  height: 100%;
+  left: 3.3rem;
+  top: 0;
+}
+
+.page p {
+  margin: 0;
+  text-indent: 1rem;
+  padding-bottom: 1.2rem;
+  color: black;
+  line-height: 23px;
+}
+.profilee {
+  width: 250px;
+  height: 280px;
+  background: rgb(39, 39, 39);
+  border-radius: 12px;
+  box-shadow: 0px 0px 30px rgba(0, 0, 0, 0.123);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: flex-start;
+  transition-duration: .5s;
+  margin-top: 4%;
+  margin-bottom: 5%;
+}
+
+.profileImage {
+  background: linear-gradient(to right,rgb(54, 54, 54),rgb(32, 32, 32));
+  margin-top: 20px;
+  width: 170px;
+  height: 170px;
+  border-radius: 50%;
+  box-shadow: 5px 10px 20px rgba(0, 0, 0, 0.329);
+}
+
+.textContainer {
+  width: 100%;
+  text-align: left;
+  padding: 20px;
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+.name {
+  font-size: 0.9em;
+  font-weight: 600;
+  color: white;
+  letter-spacing: 0.5px;
+}
+
+.profile {
+  font-size: 0.84em;
+  color: rgb(194, 194, 194);
+  letter-spacing: 0.2px;
+}
+
+.card:hover {
+  background-color: rgb(43, 43, 43);
+  transition-duration: .5s;
+}
 
 
 
@@ -1741,6 +1925,16 @@ footer .wave#wave4{
     }
     .notification{
       height: 6.8rem;
+      margin-bottom: 35%;
+    }
+    .h11{
+      font-size: 80%;
+    }
+    .page{
+      margin-top: 10%;
+    }
+    .profilee{
+      margin-top: 10%;
       margin-bottom: 35%;
     }
     
